@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../../shared/services/auth.service';
 import { DataStorageService } from '../../../shared/services/data-storage.service';
-import { Response } from '@angular/http';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +16,7 @@ export class HeaderComponent {
   onSaveData() {
     this.dataStorageService.storeRecipes()
       .subscribe(
-        (response: Response) => {
+        (response) => {
           console.log(response);
         }
       );
