@@ -16,8 +16,6 @@ import { AuthEffects } from './auth/store/auth.effects';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment'; // Angular CLI environemnt
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { trigger, state, style } from '@angular/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +23,6 @@ import { trigger, state, style } from '@angular/animations';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'my-app'}),
-    BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
