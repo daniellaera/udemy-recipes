@@ -7,11 +7,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^6.0.3",
+    "@angular/animations": "^6.1.7",
     "@angular/common": "^6.0.3",
     "@angular/compiler": "^6.0.3",
     "@angular/core": "^6.0.3",
@@ -19,13 +20,18 @@
     "@angular/http": "^6.0.3",
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/platform-server": "^6.1.7",
     "@angular/router": "^6.0.3",
     "@ngrx/effects": "^6.1.0",
     "@ngrx/router-store": "^6.1.0",
     "@ngrx/store": "^6.1.0",
     "@ngrx/store-devtools": "^6.1.0",
+    "@nguniversal/module-map-ngfactory-loader": "^6.1.0",
+    "@types/express": "^4.16.0",
+    "@types/webpack": "^4.4.11",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
+    "express": "^4.16.3",
     "firebase": "^5.4.2",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
@@ -47,8 +53,10 @@
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
+    "ts-loader": "^5.1.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~2.7.2"
+    "typescript": "~2.7.2",
+    "webpack-cli": "^3.1.0"
   }
 }
